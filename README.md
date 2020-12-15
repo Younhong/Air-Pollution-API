@@ -3,5 +3,5 @@
 # API from https://www.airvisual.com/air-pollution-data-api
 
 # Result
-![Result](screenshot/air_pollution.png)
+<image src = "screenshot/air_pollution.png" width="50%">
 
