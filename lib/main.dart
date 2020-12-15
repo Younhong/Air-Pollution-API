@@ -30,11 +30,9 @@ class _MainState extends State<Main> {
 
   //비동기로 데이터 받기
   Future<AirResult> fetchData() async {
-    String url = "https://api.airvisual.com/v2/nearest_city?key=";
-    String id = "use your api key";
+    String url = "https://api.airvisual.com/v2/nearest_city?key=" + "use your api key";
 
-    var response = await http
-        .get(url + id);
+    var response = await http.get(url);
 
     AirResult result = AirResult.fromJson(json.decode(response.body));
 
